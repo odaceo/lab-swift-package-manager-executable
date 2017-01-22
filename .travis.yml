@@ -1,0 +1,19 @@
+language: generic
+
+matrix:
+  include:
+    - os: linux
+      dist: xenial
+      sudo: required
+#    - os: osx
+#      osx_image: xcode8.2
+#      sudo: required
+
+install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then eval "$(curl -sL https://github.com/odaceo/script-ubuntu-swiftenv/raw/master/install.sh)" ; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install uuid-dev ; fi
+#  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install ossp-uuid ; fi
+
+script:
+  - swift build --configuration release
+  - .build/release/UuidGenerator
