@@ -1,4 +1,4 @@
-# Lab | Swift Package Manager | Executable
+# Lab :: Swift Package Manager :: Executable
 
 [![License](https://img.shields.io/github/license/odaceo/lab-swift-package-manager-executable.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/odaceo/lab-swift-package-manager-executable.svg)](https://travis-ci.org/odaceo/lab-swift-package-manager-executable)
